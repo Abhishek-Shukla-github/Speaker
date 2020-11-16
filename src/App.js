@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonForm from './components/Form/ButtonForm';
+import ButtonForm from './components/ButtonForm/ButtonForm';
 
 export default function App() {
     return (
