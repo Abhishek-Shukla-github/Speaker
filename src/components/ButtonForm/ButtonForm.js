@@ -5,14 +5,17 @@ import AddIcon from '@material-ui/icons/Add';
 import CloseIcon from '@material-ui/icons/Close';
 import "./ButtonForm.css";
 import Form from "../Form/Form";
+import Cards from "../Cards/Cards";
 
-const ButtonForm=()=>{
+const ButtonForm=({cards,setCard})=>{
     const [form,setForm]=useState(false);
+    useEffect(()=>{
+        setForm(!form);
+    },[cards])
     return (
         <div className="parentDiv">
-            <h1>Button Form</h1>
             <div>
-                {form && <Form/>}
+                {form && <Form cards={cards} setCard={setCard}/>}
             </div>
             <div className="buttonWrapper">
                 {!form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form)}>
@@ -21,7 +24,6 @@ const ButtonForm=()=>{
                 {form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form)}>
                     <CloseIcon fontSize="large" />
                 </IconButton>}
-                
             </div>
         </div>
     );

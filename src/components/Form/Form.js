@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
+import useInput from "../../hooks/useInput";
+import Card from "../Cards/Cards";
 
 function Copyright() {
   return (
@@ -44,9 +46,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function Form({cards,setCard}) {
   const classes = useStyles();
-
+  //console.log(cards);
+  const [caption,setCaption]=useInput("");
+  const [image,setImage]=useInput("");
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    let card={};
+    let newCards=[];
+    card.caption=caption;
+    card.image=image;
+    newCards=[...cards,card];
+    //cards.push(card)
+    setCard(newCards);
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -68,6 +82,7 @@ export default function SignIn() {
             name="caption"
             autoComplete="caption"
             autoFocus
+            onChange={setCaption}
           />
           <TextField
             variant="outlined"
@@ -79,6 +94,7 @@ export default function SignIn() {
             type="text"
             id="image"
             autoComplete="Image-URL"
+            onChange={setImage}
           />
          
           <Button
@@ -87,6 +103,7 @@ export default function SignIn() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={handleSubmit}
           >
             Add Widget
           </Button>
