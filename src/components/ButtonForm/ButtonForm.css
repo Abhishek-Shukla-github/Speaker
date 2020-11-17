@@ -1,5 +1,5 @@
-.parentDiv {
-}
+/* .parentDiv {
+} */
 
 .buttonWrapper {
   position: fixed;
@@ -8,8 +8,8 @@
 }
 
 .button {
-  color: white;
+  font-size: 200px !important;
   padding: 40px;
   border-radius: 4px;
-  background-color: burlywood !important;
+  background-color: #bf5f82 !important;
 }

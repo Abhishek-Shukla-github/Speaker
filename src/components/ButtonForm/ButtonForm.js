@@ -16,11 +16,11 @@ const ButtonForm=({cards,setCard})=>{
                 {form && <Form cards={cards} setCard={setCard}/>}
             </div>
             <div className="buttonWrapper">
-                {!form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form)}>
-                    <AddIcon fontSize="large" />
+                {!form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form) } >
+                    <AddIcon style={{fontSize:"60px"}} />
                 </IconButton>}
                 {form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form)}>
-                    <CloseIcon fontSize="large" />
+                    <CloseIcon style={{fontSize:"60px"}} />
                 </IconButton>}
             </div>
         </div>
