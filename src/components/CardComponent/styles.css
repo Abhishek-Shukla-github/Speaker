@@ -1,0 +1,5 @@
+.cardMedia {
+  min-height: 300px !important;
+  width: 300px !important;
+  background-color: red !important;
+}

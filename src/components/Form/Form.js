@@ -10,7 +10,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
 import useInput from "../../hooks/useInput";
-import Card from "../Cards/Cards";
 
 function Copyright() {
   return (
