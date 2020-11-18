@@ -1,0 +1,12 @@
+.buttonWrap {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 40px;
+  border-radius: 4px;
+  background-color: #bf5f82 !important;
+}

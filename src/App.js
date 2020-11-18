@@ -1,6 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import ButtonForm from './components/ButtonForm/ButtonForm';
+import TextBoxButton from './components/TextBoxButton/TextBoxButton';
+
 import Cards from './components/Cards/Cards';
+
 
 export default function App() {
     const [cards,setCard]=useState([]);
@@ -10,8 +13,13 @@ export default function App() {
     console.log(cards);
     return (
         <div>
+            <div>
+                <TextBoxButton />
+            </div>
             <Cards cards={cards} />
-            <ButtonForm cards={cards} setCard={setCard}/>
+            <div>
+                <ButtonForm cards={cards} setCard={setCard}/>
+            </div>
         </div>
     )
 }
