@@ -9,12 +9,14 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from "./styles";
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 export default function CardComponent({caption,image,key}) {
-    const classes=useStyles();
+  const { speak } = useSpeechSynthesis();
+  const classes=useStyles();
     return (
-        <Card key={caption} className={classes.card}>
-            <CardActionArea>
+        <Card key={caption} className={classes.card} >
+            <CardActionArea onClick={()=>speak({text:caption})}>
             <CardMedia className={classes.cardMedia}
                 image={image || "https://softsmart.co.za/wp-content/uploads/2018/06/image-not-found-1038x576.jpg"}
                 title={caption}

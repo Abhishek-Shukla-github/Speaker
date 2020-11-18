@@ -15,15 +15,18 @@ const useStyles=makeStyles({
         fontSize:"30px",
     },
     edit:{
-        backgroundColor:"#bf5f82",
+        backgroundColor:"#ffc1e3",
         padding:"5px",
         margin:"8px",
         borderRadius:"10px",
         fontSize:"50px",
         cursor:"pointer",
+        "&:hover": {
+            backgroundColor: "#bf5f82",
+          }
     },
     delete:{
-        backgroundColor:"#bf5f82",
+        backgroundColor:"#ffc1e3",
         padding:"5px",
         margin:"8px",
         borderRadius:"10px",

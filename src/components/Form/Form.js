@@ -41,7 +41,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   submit: {
+    backgroundColor:"pink",
+    padding:"10px",
     margin: theme.spacing(3, 0, 2),
+    fontSize:"17px"
+  },
+  caption:{
+    fontSize:"18px",
+  },
+  image:{
+    borderColor:"red",
+    color:"blue",
   },
 }));
 
@@ -71,7 +81,7 @@ export default function Form({cards,setCard}) {
           Sign in
         </Typography>
         <form className={classes.form} noValidate>
-          <TextField
+          <TextField className={classes.caption}
             variant="outlined"
             margin="normal"
             required
@@ -83,7 +93,7 @@ export default function Form({cards,setCard}) {
             autoFocus
             onChange={setCaption}
           />
-          <TextField
+          <TextField className={classes.image}
             variant="outlined"
             margin="normal"
             required
@@ -99,8 +109,7 @@ export default function Form({cards,setCard}) {
           <Button
             type="submit"
             fullWidth
-            variant="contained"
-            color="primary"
+            variant="outlined"
             className={classes.submit}
             onClick={handleSubmit}
           >

@@ -5,6 +5,7 @@ import "./styles.css";
 
 
 export default function Cards({cards}) {
+    
     console.log("Cards")
     console.log(cards);
     return (
