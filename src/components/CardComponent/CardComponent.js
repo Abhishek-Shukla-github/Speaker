@@ -15,7 +15,7 @@ export default function CardComponent({caption,image,key}) {
   const classes=useStyles();
     return (
         <Card key={key} className={classes.card} >
-            <CardActionArea onClick={()=>speak({text:caption})}>
+            <CardActionArea onClick={()=>caption ? speak({text:caption}) : speak({text:"There is nothing for me to speak , please add a caption"})}>
             <CardMedia className={classes.cardMedia}
                 image={image || "https://softsmart.co.za/wp-content/uploads/2018/06/image-not-found-1038x576.jpg"}
                 title={caption}
