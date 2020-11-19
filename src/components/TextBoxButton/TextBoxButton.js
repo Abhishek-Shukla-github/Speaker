@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import {IconButton,TextareaAutosize} from "@material-ui/core";
 import TextFieldsIcon from '@material-ui/icons/TextFields';
+import CancelIcon from '@material-ui/icons/Cancel';
 import "./styles.css";
 import TextBox from "../TextBox/TextBox";
 
@@ -14,7 +15,7 @@ const TextBoxButton=()=>{
             </div>
             <div className="buttonWrap">
                 <IconButton aria-label="text" className="button" onClick={()=>toggleTextbox(!textbox)}>
-                    <TextFieldsIcon style={{fontSize:"60px"}} />
+                    {textbox ? <CancelIcon style={{fontSize:"60px"}} />: <TextFieldsIcon style={{fontSize:"60px"}} /> }
                 </IconButton>
             </div>
                 {textbox && <TextBox display={textbox} /> }
