@@ -10,9 +10,6 @@ const TextBoxButton=()=>{
     const [textbox,toggleTextbox]=useState(false);
     return (
         <div className="parentDiv">
-            <div>
-                <h1>Text Box</h1>
-            </div>
             <div className="buttonWrap">
                 <IconButton aria-label="text" className="button" onClick={()=>toggleTextbox(!textbox)}>
                     {textbox ? <CancelIcon style={{fontSize:"60px"}} />: <TextFieldsIcon style={{fontSize:"60px"}} /> }

@@ -4,8 +4,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -800px);
-  background-color: #bf5f82;
-  color: white;
+  background-color: rgba(191, 95, 130, 0.56);
   padding: 20px;
   border-radius: 5px;
   transition: all 1s ease-in-out;
@@ -62,21 +61,33 @@
   text-align: center !important;
   margin: auto !important ;
   z-index: 1;
-  background-color: #ffc1e3;
+  background-color: #bf5f82;
   border: none;
   font-size: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 10px;
+  color: black;
 }
 
 .speak-button {
   display: block;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 8px;
   font-size: 23px;
   width: 30%;
   border-radius: 8px;
   border: none;
-  background-color: #ffc1e3;
+  background-color: #bf5f82;
+}
+
+.clicked {
+  transform: scale(0.8);
+}
+
+.select {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
 }
