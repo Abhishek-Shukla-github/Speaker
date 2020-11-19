@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import {IconButton} from "@material-ui/core";
 import AddIcon from '@material-ui/icons/Add';
-import CloseIcon from '@material-ui/icons/Close';
+import CancelIcon from '@material-ui/icons/Cancel';
 import "./ButtonForm.css";
 import Form from "../Form/Form";
 
@@ -20,7 +20,7 @@ const ButtonForm=({cards,setCard})=>{
                     <AddIcon style={{fontSize:"60px"}} />
                 </IconButton>}
                 {form && <IconButton aria-label="add" className="button" onClick={()=>setForm(!form)}>
-                    <CloseIcon style={{fontSize:"60px"}} />
+                    <CancelIcon style={{fontSize:"60px"}} />
                 </IconButton>}
             </div>
         </div>

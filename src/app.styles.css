@@ -1,0 +1,16 @@
+header {
+  background-color: #bf5f82;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+header p {
+  margin-top: 10px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: underline;
+  text-decoration-color: #ffc1e3;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
