@@ -11,7 +11,7 @@ const TextBoxButton=()=>{
     return (
         <div className="parentDiv">
             <div className="buttonWrap">
-                <IconButton aria-label="text" className="button" onClick={()=>toggleTextbox(!textbox)}>
+                <IconButton aria-label="text" className="text-button" onClick={()=>toggleTextbox(!textbox)}>
                     {textbox ? <CancelIcon style={{fontSize:"60px"}} />: <TextFieldsIcon style={{fontSize:"60px"}} /> }
                 </IconButton>
             </div>

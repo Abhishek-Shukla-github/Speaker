@@ -6,10 +6,9 @@
   transform: translate(-50%, -800px);
   background-color: rgba(191, 95, 130, 0.56);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
   transition: all 1s ease-in-out;
   backdrop-filter: blur(6px);
-  height: 40vh;
   margin: auto;
   color: black;
   margin: auto !important;
@@ -21,7 +20,7 @@
   align-items: center;
   display: block;
   animation: 1s ease-out fadeIn;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -100px);
   z-index: 1;
 }
 
@@ -60,10 +59,10 @@
   width: 90% !important;
   text-align: center !important;
   margin: auto !important ;
-  z-index: 1;
+  z-index: 0;
   background-color: #bf5f82;
   border: none;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 20px;
   padding: 10px;
   color: black;
@@ -72,13 +71,14 @@
 .speak-button {
   display: block;
   margin: auto;
-  margin-top: 30px;
-  padding: 8px;
+  margin-top: 20px;
+  padding: 10px;
   font-size: 23px;
-  width: 30%;
-  border-radius: 8px;
+  width: 60%;
+  border-radius: 18px;
   border: none;
   background-color: #bf5f82;
+  cursor: pointer;
 }
 
 .clicked {
@@ -86,8 +86,16 @@
 }
 
 .select {
-  width: 80%;
-  text-align: center;
+  background-color: ;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  background-color: #bf5f82;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.option {
+  background-color: #ffc1e3;
+  font-size: 20px;
 }

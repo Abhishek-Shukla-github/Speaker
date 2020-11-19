@@ -3,10 +3,11 @@
   bottom: 100px;
   right: 30px;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
-.button {
-  padding: 40px;
+.text-button {
+  padding: 10px;
   border-radius: 4px;
   background-color: #bf5f82 !important;
 }
