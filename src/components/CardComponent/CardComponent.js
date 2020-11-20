@@ -10,12 +10,12 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import { useSpeechSynthesis } from 'react-speech-kit';
 
-export default function CardComponent({caption,image,key}) {
+export default function CardComponent({caption,image,key,accent}) {
   const { speak,voices} = useSpeechSynthesis();
   const classes=useStyles();
     return (
         <Card key={key} className={classes.card} >
-            <CardActionArea onClick={()=>caption ? speak({text:caption}) : speak({text:"There is nothing for me to speak , please add a caption"})}>
+            <CardActionArea onClick={()=>caption ? speak({text:caption,voice:accent}) : speak({text:"There is nothing for me to speak , please add a caption",voice:accent})}>
             <CardMedia className={classes.cardMedia}
                 image={image || "https://softsmart.co.za/wp-content/uploads/2018/06/image-not-found-1038x576.jpg"}
                 title={caption}

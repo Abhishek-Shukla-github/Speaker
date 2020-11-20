@@ -6,7 +6,7 @@ import "./styles.css";
 import TextBox from "../TextBox/TextBox";
 
 
-const TextBoxButton=()=>{
+const TextBoxButton=({accent,setAccent})=>{
     const [textbox,toggleTextbox]=useState(false);
     return (
         <div className="parentDiv">
@@ -15,7 +15,7 @@ const TextBoxButton=()=>{
                     {textbox ? <CancelIcon style={{fontSize:"60px"}} />: <TextFieldsIcon style={{fontSize:"60px"}} /> }
                 </IconButton>
             </div>
-                {textbox && <TextBox display={textbox} /> }
+                {textbox && <TextBox display={textbox} accent={accent} setAccent={setAccent}/> }
         </div>
     );
 }

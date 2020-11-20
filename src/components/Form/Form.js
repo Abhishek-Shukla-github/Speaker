@@ -78,11 +78,10 @@ export default function Form({cards,setCard}) {
           <AddToPhotosIcon style={{fontSize:"30px"}}/>
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Add your Widget
         </Typography>
         <form className={classes.form} noValidate>
           <TextField className={classes.caption}
-            variant="outlined"
             margin="normal"
             required
             fullWidth
@@ -90,11 +89,9 @@ export default function Form({cards,setCard}) {
             label="Caption"
             name="caption"
             autoComplete="caption"
-            autoFocus
             onChange={setCaption}
           />
           <TextField className={classes.image}
-            variant="outlined"
             margin="normal"
             required
             fullWidth

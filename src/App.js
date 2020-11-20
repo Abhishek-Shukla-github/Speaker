@@ -6,23 +6,27 @@ import "./app.styles.css";
 
 
 export default function App() {
+    let voices = window.speechSynthesis.getVoices();
     const [cards,setCard]=useState([]);
+    const [accent,setAccent]=useState("");
     useEffect(()=>{
         setCard(cards);
     },[cards,setCard])
-    console.log(cards);
+    console.log(voices[0]);
+    useEffect(()=>{
+        setAccent(voices[0]);
+        console.log("Accent changed to "+voices[0]);
+    },[]);
     return (
         <div>
             <header>
                 <h1>Speaker</h1>
                 <p>The voice of the voiceless</p>
             </header>
+            <TextBoxButton accent={accent} setAccent={setAccent}/>
+            <Cards cards={cards} accent={accent}/>
             <div>
-                <TextBoxButton />
-            </div>
-            <Cards cards={cards} />
-            <div>
-                <ButtonForm cards={cards} setCard={setCard}/>
+                <ButtonForm cards={cards} setCard={setCard} accent={accent}/>
             </div>
         </div>
     )
