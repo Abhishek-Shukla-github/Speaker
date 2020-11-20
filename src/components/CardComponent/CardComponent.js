@@ -11,7 +11,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import { useSpeechSynthesis } from 'react-speech-kit';
 
 export default function CardComponent({caption,image,key,accent}) {
-  const { speak,voices} = useSpeechSynthesis();
+  const { speak} = useSpeechSynthesis();
   const classes=useStyles();
     return (
         <Card key={key} className={classes.card} >

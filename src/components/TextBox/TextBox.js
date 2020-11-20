@@ -19,6 +19,7 @@ export default function TextBox({display,accent,setAccent}) {
             });
                 setAccent(foundVoices[0]);
             }}>
+                <option className="option">Choose accent</option>
                 {voices.map((voice)=>{
                     return <option className="option">{voice.name}</option>
                 })}

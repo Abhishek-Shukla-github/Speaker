@@ -12,11 +12,11 @@ export default function App() {
     useEffect(()=>{
         setCard(cards);
     },[cards,setCard])
-    console.log(voices[0]);
     useEffect(()=>{
         setAccent(voices[0]);
-        console.log("Accent changed to "+voices[0]);
+        console.log("Accent intialized to :-");
     },[]);
+    console.log(accent);
     return (
         <div>
             <header>
