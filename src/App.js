@@ -6,10 +6,15 @@ import "./app.styles.css";
 
 
 export default function App() {
+    let localData=()=>{
+        let data=localStorage.getItem("cards");
+        return data? JSON.parse(data) : [];
+    }
     let voices = window.speechSynthesis.getVoices();
-    const [cards,setCard]=useState([]);
+    const [cards,setCard]=useState(localData);
     const [accent,setAccent]=useState("");
     useEffect(()=>{
+        localStorage.setItem("cards",JSON.stringify(cards));
         setCard(cards);
     },[cards,setCard])
     useEffect(()=>{
