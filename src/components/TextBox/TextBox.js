@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import useInput from "../../hooks/useInput";
 import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 import "./styles.css";
@@ -21,7 +21,7 @@ export default function TextBox({display,accent,setAccent}) {
             }}>
                 <option className="option">Choose accent</option>
                 {voices.map((voice)=>{
-                    return <option className="option">{voice.name}</option>
+                    return <option key={voice.name} className="option">{voice.name}</option>
                 })}
             </select>
             <TextareaAutosize className="text-area" onChange={(e)=>setText(e)}
