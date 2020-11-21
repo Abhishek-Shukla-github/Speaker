@@ -8,10 +8,8 @@ export default function Cards({cards,accent,edit,setCard}) {
     const removeCard=(cardId)=>{
         //Filtering the cards not having id same as that of card to be deleted
         //This will remove that one card which has the same id
-        console.log(cards);
         const updatedCards=cards.filter(card=>cardId!==card.caption);
         setCard(updatedCards);
-        console.log(updatedCards);
       }
     return (
         <Grid container spacing={3} className="grid">

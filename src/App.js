@@ -4,7 +4,7 @@ import TextBoxButton from './components/TextBoxButton/TextBoxButton';
 import {Checkbox,FormControlLabel} from "@material-ui/core";
 import Cards from './components/Cards/Cards';
 import "./app.styles.css";
-
+import {animateScroll as scroll } from 'react-scroll';
 
 export default function App() {
     let localData=()=>{
@@ -18,6 +18,7 @@ export default function App() {
     useEffect(()=>{
         localStorage.setItem("cards",JSON.stringify(cards));
         setCard(cards);
+        scroll.scrollToBottom();
     },[cards,setCard])
     useEffect(()=>{
         setAccent(voices[0]);
