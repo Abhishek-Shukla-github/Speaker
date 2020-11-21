@@ -10,7 +10,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import { useSpeechSynthesis } from 'react-speech-kit';
 
-export default function CardComponent({caption,image,accent}) {
+export default function CardComponent({caption,image,accent,edit}) {
   const { speak} = useSpeechSynthesis();
   const classes=useStyles();
     return (
@@ -27,8 +27,11 @@ export default function CardComponent({caption,image,accent}) {
           </Typography>
         </CardContent>
         <CardActions>
-        <EditIcon className={classes.edit}/>
-        <DeleteIcon className={classes.delete}/>
+        {edit && 
+        <div>
+          <EditIcon className={classes.edit}/>
+          <DeleteIcon className={classes.delete}/>
+        </div> }
       </CardActions>
         </Card>
     )
