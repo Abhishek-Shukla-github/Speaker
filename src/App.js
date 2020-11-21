@@ -28,7 +28,8 @@ export default function App() {
             <header>
                 <h1>Speaker</h1>
                 <p>The voice of the voiceless</p>
-                <FormControlLabel value="editing" control={<Checkbox color="secondary" onClick={()=>setEdit(!edit)}/>} label="Enable Editing" labelPlacement="start" style={{backgroundColor:"rgba(255, 193, 227,0.35)",padding:"5px",margin:"10px",borderRadius:"8px"}}/>
+                <p>And those suffering from autism</p>
+                <FormControlLabel value="editing" control={<Checkbox color="secondary" onClick={()=>setEdit(!edit)}/>} label="Enable Editing" labelPlacement="start" style={{backgroundColor:"rgba(255, 193, 227,0.35)",padding:"5px",marginTop:"15px",borderRadius:"8px"}}/>
             </header>
             <TextBoxButton accent={accent} setAccent={setAccent}/>
             <Cards cards={cards} accent={accent} edit={edit} setCard={setCard}/>

@@ -4,7 +4,12 @@ import {makeStyles} from "@material-ui/core/styles";
 const useStyles=makeStyles({
     card:{
         backgroundColor:"#f48fb1",
-        textAlign:"center"
+        textAlign:"center",
+        boxShadow: "rgba(50, 50, 93, 0.5) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px",
+        "&:hover": {
+            transform: "scale(1.05)",
+            transition: "all 1s ease-in-out",
+        }
     },
     cardMedia:{
         minHeight:"25vh",
