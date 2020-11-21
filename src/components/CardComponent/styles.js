@@ -14,7 +14,7 @@ const useStyles=makeStyles({
         fontFamily: 'Barlow' || "sansSerif", 
         fontSize:"30px",
     },
-    edit:{
+    delete:{
         backgroundColor:"#ffc1e3",
         padding:"5px",
         margin:"8px",
@@ -24,14 +24,6 @@ const useStyles=makeStyles({
         "&:hover": {
             backgroundColor: "#bf5f82",
           }
-    },
-    delete:{
-        backgroundColor:"#ffc1e3",
-        padding:"5px",
-        margin:"8px",
-        borderRadius:"10px",
-        fontSize:"50px",
-        cursor:"pointer",
     }
 });
 

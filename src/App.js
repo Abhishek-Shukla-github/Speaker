@@ -30,7 +30,7 @@ export default function App() {
                 <FormControlLabel value="editing" control={<Checkbox color="secondary" onClick={()=>setEdit(!edit)}/>} label="Enable Editing" labelPlacement="start" style={{backgroundColor:"rgba(255, 193, 227,0.35)",padding:"5px",margin:"10px",borderRadius:"8px"}}/>
             </header>
             <TextBoxButton accent={accent} setAccent={setAccent}/>
-            <Cards cards={cards} accent={accent} edit={edit}/>
+            <Cards cards={cards} accent={accent} edit={edit} setCard={setCard}/>
             <div>
                 <ButtonForm cards={cards} setCard={setCard} accent={accent}/>
             </div>
