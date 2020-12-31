@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Speaker : The Voice of the voiceless.
+### [Live Site](https://speaker-shukla.netlify.app/)
 
-## Available Scripts
+![Overview](https://i.ibb.co/M1VnyMd/speaker-intro.jpg)
+![Overview](https://i.ibb.co/WPw6fsb/speaker-deletion.jpg)
+![Overview](https://i.ibb.co/M1VnyMd/speaker-intro.jpg)
+![Overview](https://i.ibb.co/dkRRfpf/speaker-textbox.jpg)
 
-In the project directory, you can run:
+## Introduction:-
 
-### `npm start`
+* Speaker is a Web App build with ReactJS to help people suffering from autism or speech impairment be able to convey their emotions.
+* The app allows the family members to create a widget , tapping which the device will speak out the caption and the image will help the user recognize it's purpose.
+* A special Textbox is provided for those people who only have speech impairment , so they can simply write what they wish to speak and the device will speak out loud the text.
+* ###A support of variety of accent support is provided however the accent support varies from browser to browsers and OS to OS.###
+* Local Storage is implemented to save the created widget
+* The speech synthesis is performed with help of package called as react-speech-kit.
+* Material-UI is used to design the entire UI.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Setup:-
+run ``` npm i && npm start ```
