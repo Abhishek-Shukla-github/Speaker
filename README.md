@@ -1,4 +1,4 @@
-# Speaker : The Voice of the voiceless.
+# Speaker : The Voice of the Voiceless.
 ### [Live Site](https://speaker-shukla.netlify.app/)
 
 ![Overview](https://i.ibb.co/M1VnyMd/speaker-intro.jpg)
@@ -13,7 +13,7 @@
 * A special Textbox is provided for those people who only have speech impairment , so they can simply write what they wish to speak and the device will speak out loud the text.
 * A support of variety of accent support is provided however the accent support varies from browser to browsers and OS to OS.
 * Local Storage is implemented to save the created widget
-* The speech synthesis is performed with help of package called as react-speech-kit.
+* The mechanism of speaking of the device as well as the accent select is performed with help of package called as react-speech-kit.
 * Material-UI is used to design the entire UI.
 
 Setup:-
