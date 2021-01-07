@@ -14,7 +14,7 @@
 * A support of variety of accent support is provided however the accent support varies from browser to browsers and OS to OS.
 * Local Storage is implemented to save the created widget
 * The mechanism of speaking of the device as well as the accent select is performed with help of package called as react-speech-kit.
-* Material-UI is used to design the entire UI.
+* Material-UI is used to design the entire User Interface.
 
 Setup:-
 run ``` npm i && npm start ```
