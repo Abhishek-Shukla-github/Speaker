@@ -12,7 +12,7 @@
 * The app allows the family members to create a widget , tapping which the device will speak out the caption and the image will help the user recognize it's purpose.
 * A special Textbox is provided for those people who only have speech impairment , so they can simply write what they wish to speak and the device will speak out loud the text.
 * A support of variety of accent support is provided however the accent support varies from browser to browsers and OS to OS.
-* Local Storage is implemented to save the created widget
+* Local Storage is implemented to save the created widget , full fledged backend will be added soon
 * The mechanism of speaking of the device as well as the accent select is performed with help of package called as react-speech-kit.
 * Material-UI is used to design the entire User Interface.
 
